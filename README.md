@@ -115,7 +115,8 @@ In both cases, you would get this in the console:
 You can of course test all of these options online on [CSVJSON/csv2json](https://www.csvjson.com/csv2json).
 
 # Tests
-Run the tests in your browser: (test-browser.html)[./test-browser.html]
+Run the tests in your browser: [test-browser.html](./test-browser.html)
+
 Run the tests through node:
 ```
 node test-node.js
