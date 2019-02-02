@@ -112,7 +112,7 @@ In both cases, you would get this in the console:
 - `transpose`: If set to `true` will pivot the table. The first column becomes the header.
 - `hash`: If set to `true` will use the first column as a key and return a hash instead of an array of objects.
 
-You can of course test all of these options online on (CSVJSON/csv2json)[https://www.csvjson.com/csv2json].
+You can of course test all of these options online on [CSVJSON/csv2json](https://www.csvjson.com/csv2json).
 
 # Tests
 Run the tests in your browser: (test-browser.html)[./test-browser.html]
