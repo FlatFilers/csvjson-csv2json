@@ -7,7 +7,7 @@
   "dependencies": { },
   "devDependencies": { },
   "main": "csv2json.js",
-  "keywords": ["csv", "json", "parse"],
+  "keywords": ["csv", "json", "parse", "convert"],
   "repository": {
     "type": "git",
     "url": "git://github.com/martindrapeau/csvjson-csv2json.git"
