@@ -26,7 +26,7 @@
 
   var errorDetectingSeparator = "We could not detect the separator.",
       errorNotWellFormed = "CSV is not well formed",
-      errorEmpty = "Please upload a file or type in something.",
+      errorEmpty = "Empty CSV. Please provide something.",
       errorEmptyHeader = "Could not detect header. Ensure first row cotains your column headers.",
       separators = [",", ";", "\t"],
       pegjsSeparatorNames = {
