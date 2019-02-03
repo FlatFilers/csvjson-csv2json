@@ -3,6 +3,8 @@ CSVJSON csv2json() function
 
 Single function `csv2json` to reliably convert CSV to JSON. Self contained without dependencies. Used to power CSVJSON the online tool found at [www.csvjson.com/csv2json](https://www.csvjson.com/csv2json). Used by thousands everyday.
 
+[npm package here](https://www.npmjs.com/package/csvjson-csv2json).
+
 # Usage
 Simply call `csv2json` passing a string to obtain JSON. The string may be CSV (comma separated values), TSV (tab separated values) or semi-colon separated values (typically used in French Excel). It will auto-detect the separator although you may override or force it via the `separator` option.
 
@@ -112,12 +114,15 @@ In both cases, you would get this in the console:
 - `transpose`: If set to `true` will pivot the table. The first column becomes the header.
 - `hash`: If set to `true` will use the first column as a key and return a hash instead of an array of objects.
 
-You can of course test all of these options online on [CSVJSON/csv2json](https://www.csvjson.com/csv2json).
+You can of course test all of these options online on [www.csvjson.com/csv2json](https://www.csvjson.com/csv2json).
 
 # Tests
-Run the tests in your browser: [test-browser.html](./test-browser.html)
+Run the tests in your browser by opening `test-browser.html`.
 
 Run the tests through node:
 ```
 node test-node.js
 ```
+
+# Companion functions
+[JSON2_mod](https://github.com/martindrapeau/json2-mod) to beautify your JSON. [npm package here](https://www.npmjs.com/package/json2-mod).
