@@ -3,12 +3,13 @@ CSVJSON csv2json() function
 
 Single function `csv2json` to reliably convert CSV to JSON. Self contained without dependencies. Used to power CSVJSON the online tool found at [www.csvjson.com/csv2json](https://www.csvjson.com/csv2json). Used by thousands everyday.
 
-[npm package here](https://www.npmjs.com/package/csvjson-csv2json).
+[npm package here](https://www.npmjs.com/package/csvjson-csv2json)
 
 # Usage
 Simply call `csv2json` passing a string to obtain JSON. The string may be CSV (comma separated values), TSV (tab separated values) or semi-colon separated values (typically used in French Excel). It will auto-detect the separator although you may override or force it via the `separator` option.
 
-Node example:
+## Node example
+
 ```
 const csv2json = require('./csv2json.js');
 const csv = `album, year, US_peak_chart_post
@@ -28,8 +29,10 @@ console.log(json);
 
 ```
 
-Browser example:
+## Browser example
+
 Note: In the browser, global namespace `CSVJSON` is created. It contains the `csv2json` function.
+
 ```
 <script type="text/javascript" src="csv2json.js"></script>
 <script>
@@ -106,7 +109,7 @@ In both cases, you would get this in the console:
 ]
 ```
 
-# Documentation
+## Documentation
 `csv2json` supports a number of options passed as an optional hash:
 - `separator`: Character which acts as separator. If omitted, will attempt to detect comma `,`, semi-colon `;` or tab `\t`.
 - `parseNumbers`: If set to `true` will attempt to convert a value to a number, if possible.
@@ -116,7 +119,7 @@ In both cases, you would get this in the console:
 
 You can of course test all of these options online on [www.csvjson.com/csv2json](https://www.csvjson.com/csv2json).
 
-# Tests
+## Tests
 Run the tests in your browser by opening `test-browser.html`.
 
 Run the tests through node:
@@ -125,4 +128,7 @@ node test-node.js
 ```
 
 # Companion functions
+
+[json2csv](https://github.com/martindrapeau/csvjson-csv2json) to convert JSON to CSV. [npm package here](https://www.npmjs.com/package/csvjson-json2csv).
+
 [JSON2_mod](https://github.com/martindrapeau/json2-mod) to beautify your JSON. [npm package here](https://www.npmjs.com/package/json2-mod).
