@@ -1,7 +1,7 @@
 {
   "name": "csvjson-csv2json",
   "description": "Converts CSV to JSON. Powers the most used online tool CSVJSON https://www.csvjson.com/csv2json. Used by thousands everyday.",
-  "version": "5.0.5",
+  "version": "5.0.6",
   "author": "Martin Drapeau <martindrapeau@gmail.com>",
   "contributors": [],
   "dependencies": { },
