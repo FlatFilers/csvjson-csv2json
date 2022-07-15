@@ -11,7 +11,7 @@ Simply call `csv2json` passing a string to obtain JSON. The string may be CSV (c
 ### Node example
 
 ```js
-const csv2json = require('./csv2json.js');
+const csv2json = require('csvjson-csv2json');
 const csv = `album, year, US_peak_chart_post
 The White Stripes, 1999, -
 De Stijl, 2000, -
