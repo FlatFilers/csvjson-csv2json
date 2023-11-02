@@ -37,11 +37,13 @@
 
   // Picks the separator we find the most.
   function detectSeparator(csv) {
+    // Remove characters between double quotes
+    var cleanedCsv = csv.replace(/"([^"]*)"/g, '');
     var counts = {},
         sepMax;
     separators.forEach(function(sep, i) {
       var re = new RegExp(sep, 'g');
-      counts[sep] = (csv.match(re) || []).length;
+      counts[sep] = (cleanedCsv.match(re) || []).length;
       sepMax = !sepMax || counts[sep] > counts[sepMax] ? sep : sepMax;
     });
     return sepMax;
